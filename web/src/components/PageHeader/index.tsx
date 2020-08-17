@@ -10,6 +10,8 @@ import './style.css';
 //propriedades do page header
 interface PageHeaderProps {
     title: string;
+    description?: string;
+    //o ponto de interrogação faz com que essa propriedade não seja
 }
 //Function Component
 const PageHeader: React.FC<PageHeaderProps> = (props) => {
@@ -23,7 +25,9 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
         </div>
 
         <div className="header-content">
-            <strong>{props.title}</strong>
+            <strong>{props.title}</strong> 
+            
+            { props.description && <p>{props.description}</p> }
 
             {props.children}
         </div>
