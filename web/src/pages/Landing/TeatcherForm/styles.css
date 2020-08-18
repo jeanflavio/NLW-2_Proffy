@@ -26,6 +26,10 @@
     margin-top:  6.4rem;
 }
 
+#page-teacher-form main label {
+    color: #9C98A6;
+}
+
 #page-teacher-form main fieldset legend {
     font: 700 2.4rem Archivo;
     color: #32264D;
@@ -36,6 +40,11 @@
     width: 100%;
     padding-bottom: 1.6rem;
     border-bottom: 1px solid #E6E6F0 
+}
+
+#page-teacher-form main fieldset .input-block + .textarea-block,
+#page-teacher-form main fieldset .select-block + .input-block{
+    margin-top: 2.4rem;
 }
 
 #page-teacher-form main footer {
@@ -97,4 +106,13 @@
         align-items: center;
         justify-content: space-between;
     }
-}
+
+    #page-teacher-form main footer p{
+        justify-content: space-between;
+    }
+
+    #page-teacher-form main footer button{
+        width: 20rem;
+        margin-top: 0;
+    }    
+} 
